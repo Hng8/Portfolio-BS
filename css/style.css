@@ -21,17 +21,33 @@ body {
 }
 
 /* Navigation */
-header .main-menu .navbar .navbar-brand {
-    padding: 0 1rem 0 5rem;
-}
+
 
 header .main-menu .navbar {
-    padding: 1rem 20rem;
+    padding: 1rem 2rem;
 }
 header .main-menu .nav-item .nav-link {
-    font-family: var(--roboto);
+    font: normal 500 15px/2 var(--roboto);
     text-transform: uppercase;
-    font-weight: 500;
-    padding: 1.7rem;
+    padding: 1.4rem;
     color: var(--little-color);
+}
+header .main-menu .navbar-nav  .nav-item .active {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: var(--gradient-color);
+}
+header .main-menu .navbar-nav  .nav-item:hover  {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: var(--gradient-color);
+}
+@media (max-width: 767px) {
+    header .main-menu .nav-item .nav-link {
+        padding: 1rem;
+    }
 }
