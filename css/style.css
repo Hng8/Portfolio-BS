@@ -1,7 +1,8 @@
 :root {
     --primary-color: #4458de;
     --primary-color2: #854fee;
-    --little-color: #141313;
+    --little-color: hsl(0, 3%, 8%);
+    --text-color: #787d82;
     --border-color: #777777;
     --gradient-color: linear-gradient(90deg, #4458dc, #854fee 100%);
     --shadow-color: 0px 10px 30px(rgba(118,85,225,0.3));
@@ -65,6 +66,12 @@ body {
     color: whitesmoke;
     box-shadow: var(--box-shadow);
 }
+
+p.para {
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto);
+}
+
 /* Navigation */
 
 
@@ -122,4 +129,17 @@ header .main-menu .navbar-nav  .nav-item:hover  {
 .site-main .site-banner .banner-image > img {
     padding: 7rem 0;
     width: 90rem;
+}
+
+/* About Us */
+.site-main .about-area {
+    padding: 4rem 2rem;
+}
+.site-main .about-area .about-title h2 > span {
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+    letter-spacing: 21px;
+}
+.site-main .about-area .about-title .paragraph > p {
+    padding: .4rem 0;
 }
