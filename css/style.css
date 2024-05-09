@@ -257,6 +257,9 @@ header .main-menu .navbar-nav  .nav-item:hover  {
     font: normal 700 25px/12px var(--roboto)
 }
 
+.site-main .project-area .grid .our-project .img a:hover img {
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
 button:focus,
 button:active,
 button:hover,
@@ -264,4 +267,8 @@ button:hover,
 .btn.active {
     outline: 0px !important;
     box-shadow: none !important;
+}
+
+.title-h1 {
+    font: normal bold 39px/40px var(--roboto);
 }
